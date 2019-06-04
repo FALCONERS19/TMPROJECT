@@ -34,7 +34,7 @@ public class RegDAO {
 		String sql="insert into Project.Registration2 values(?,?,?,?,?,?,?,?,?,?,?)";
 		
 		PreparedStatement pre=con.prepareStatement(sql);
-		
+		System.out.println("Success5");
 		pre.setString(1, fname);
 		pre.setString(2, lname);
 		pre.setString(3, email);

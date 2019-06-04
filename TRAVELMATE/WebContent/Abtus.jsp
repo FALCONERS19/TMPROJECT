@@ -99,13 +99,11 @@ font-style:bold;
   <div class="main">  	
    </div>  
    <ul>
-	<li><a href="#"><b>Home</b></a></li>
-	<li class="abt"><a href="#"><b>About Us</b></a>
-  	</li>
-	<li class="service"><a href="#"><b>Services</b></a>
- 	</li>
+	<li><a href="Homepage.jsp"><b>Home</b></a></li>
+	<li><a href="Abtus.jsp"><b>About Us</b></a></li>
+	<li><a href="Services.jsp"><b>Services</b></a></li>
 	<li><a href="Gallery.jsp"><b>Gallery</b></a></li>
-	<li><a href="Contactus.jsp"><b>Contact Us</b></a></li>
+	<li><a href="Contact Us.jsp"><b>Contact Us</b></a></li>
    </ul>  
   </div>	
 </header>

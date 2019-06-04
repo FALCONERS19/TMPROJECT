@@ -94,15 +94,6 @@ ul li ul {
 	width: 0px;
 	height: 0px;
 }
-
-.service {
-	margin-right: -51px;
-}
-
-.abt {
-	margin-right: -51px;
-}
-
 ul li ul li {
 	padding: 10px;
 	margin-left: -130px;
@@ -159,20 +150,11 @@ font-weight: 900;
 				<img src="Images/Tlogo1.png" alt="TravelMate">
 			</div>
 			<ul>
-				<li><a href="#"><b>Home</b></a></li>
-				<li class="abt"><a href="#"><b>About Us</b></a>
-				<ul>
-						<li class="asub"><a href="#"><b>Our&nbspTeam</b></a></li>
-						<li class="asub"><a href="#"><b>Vision&nbsp&&nbspMission</b></a></li>
-					</ul> 	</li>
-				<li class="service"><a href="#"><b>Services</b></a>
-					<ul>
-						<li class="sub"><a href="Eticket.jsp"><b>E&nbspTicket</b></a></li>
-						<li class="sub"><a href="Cargo.jsp"><b>Cargo&nbspServices</b></a></li>
-						
-					</ul></li>
+				<li><a href="Homepage.jsp"><b>Home</b></a></li>
+				<li><a href="Abtus.jsp"><b>About Us</b></a></li>
+				<li><a href="Services.jsp"><b>Services</b></a></li>
 				<li><a href="Gallery.jsp"><b>Gallery</b></a></li>
-				<li><a href="Cont.jsp"><b>Contact Us</b></a></li>
+				<li><a href="Contact Us.jsp"><b>Contact Us</b></a></li>
 
 			</ul>
 		</div>

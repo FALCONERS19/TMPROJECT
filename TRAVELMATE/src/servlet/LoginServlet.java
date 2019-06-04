@@ -32,14 +32,13 @@ public class LoginServlet extends HttpServlet {
 			ResultSet rs=stat.executeQuery("select * from PROJECT.REGISTRATION2 where USERID='"+u1+"'and password='"+p1+"'");
 			if(rs.next())
 			{
-				HttpSession session = request.getSession(true);
-	        	 session.setAttribute("u1",u1);
+				
 
 				response.sendRedirect("Homepage.jsp");
 			}
 			else
 			{
-				response.sendRedirect("Login.jsp");
+				response.sendRedirect("package.jsp");
 			}
 			
 			out.print(u1+" "+p1);

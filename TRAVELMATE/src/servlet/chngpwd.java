@@ -18,16 +18,16 @@ public class chngpwd extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out=response.getWriter();
 		  
-		  String userid=request.getParameter("uid");
-		  String curpwd=request.getParameter("cpass");
-		  String newpwd=request.getParameter("new");
-		  String conpwd=request.getParameter("renew");
+		  String userid=request.getParameter("userid");
+		  //String curpwd=request.getParameter("curpwd");
+		  String newpwd=request.getParameter("newpwd");
+		  String conpwd=request.getParameter("conpwd");
 		  
 		 
 		  
 		   if(!newpwd.equals(conpwd))
 		  {
-		    out.println("<html><body><h4>New password and confirm password should be same!"+"\n" +"Successfully Registered!!!!!!"+"\n"+"<h4></body></html>");
+			out.println("<html><body><h4>New password and confirm password should be same!"+"\n" +"Successfully Registered!!!!!!"+"\n"+"<h4></body></html>");
 		   
 		   getServletContext().getRequestDispatcher("/Login.jsp").forward(request, response);
 		  }
@@ -37,27 +37,29 @@ public class chngpwd extends HttpServlet {
 		  {
 		  DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
 		  Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","system");
-		  String sql="update PROJECT.Registration2 set password=? where userid=?";
+		  String sql="update veni.Form1 set password=? where userid=?";
 		  
 		  PreparedStatement pre=con.prepareStatement(sql);
 		  pre.setString(1, newpwd);
 		  pre.setString(2, userid);
-		 // pre.setString(3, curpwd);
+		  //pre.setString(3, curpwd);
 		  int result=pre.executeUpdate();
 		  
 		  if(result>0)
-		        {
+		    	{
 		   
-		  out.println("<html><body><h4>Your password updated Successfully"+"<h4></body></html>");
+		  out.println("<html><body><h4>Congragulations Updated!"+"\n" +"Successfully Registered!!!!!!"+"\n"+"<h4></body></html>");
 		  
-		        }
+		    	}
 		  }
 		  catch(Exception e)
 		  {
 		   e.printStackTrace();
 		  }
+
+
 	}
 
 
-}
-}
+	}}
+

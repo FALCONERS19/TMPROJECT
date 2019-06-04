@@ -295,19 +295,19 @@ margin-bottom: -9px;
 </style>
 </head>
 <body>
-<form name="RegForm" action="BookServlet" method="post">
+<form name="RegForm" action="SouthTicketServlet" method="post">
 		<div class="main">
 			<div class="logo">
 				<img src="Images/Tlogo1.png" alt="TravelMate">
 			</div>
 			<ul>
 				<li><a href="Homepage1.jsp"><b>Home</b></a></li>
-				<li class="abt"><a href="#"><b>About Us</b></a>
+				<li><a href="Abtus.jsp"><b>About Us</b></a>
+</li>
+				<li><a href="Services.jsp"><b>Services</b></a>
 					</li>
-				<li class="service"><a href="#"><b>Services</b></a>
-					</li>
-				<li><a href="#"><b>Gallery</b></a></li>
-				<li><a href="#"><b>Contact Us</b></a></li>
+				<li><a href="Gallery.jsp"><b>Gallery</b></a></li>
+				<li><a href="Contact Us.jsp"><b>Contact Us</b></a></li>
 				<li><a href="Login.jsp"><b>Logout</b></a></li>
 
 			</ul>

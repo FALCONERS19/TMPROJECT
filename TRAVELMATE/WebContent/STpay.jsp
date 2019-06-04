@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Billing</title>
+<title>South Package pay</title>
 <style type="text/css">
 <style>
 *{
@@ -15,26 +15,59 @@ font-family: century gothic;
 }
 body{
 width:100%;
-height:auto;
-
-
+height:100%;
+background-image:url('./Images/sunset.jpg');
+background-position: center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size:cover;
 }
-.btn{
+.text1{
 margin-top: 20%;
-margin-left: 50%;
+margin-left: 35%;
 width:100px;
-height: 100px;
+height: 50px;
+border-radius:20px;
+border: 2px solid #fff;
+background-color: transparent;
 }
-
-
+.text2{
+margin-top: 0%;
+margin-left: 10%;
+width:100px;
+height: 50px;
+border-radius:20px;
+border: 2px solid #fff;
+background-color: transparent;
+}
+.btn button a{
+text-decoration: none;
+font-size: 20px;
+color:#fff;
+font-weight: 900;
+}
+.btn button a:hover{
+color: #000;
+}
+.text1:hover{
+background-color: #fff;
+}
+.text2:hover{
+background-color: #fff;
+}
+.text1 a{
+font-family: century gothic;
+}
+.text2 a{
+font-family: century gothic;
+}
 </style>
 </head>
 <body>
 <form>
 <div class="btn">
-<button class=""><a href="SouthEticket.jsp">Back</a></button>
-
-<button class=""><a href="Payment.jsp">Pay</a></button>
+<button class="text1"><a href="SouthEticket.jsp">Back</a></button>
+<button class="text2"><a href="Payment.jsp">Pay</a></button>
 </div>
 </form>
 

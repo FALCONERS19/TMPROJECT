@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class NorthTicketServlet
  */
-@WebServlet("/NorthTicketServlet")
+@WebServlet("/NorthEticket")
 public class NorthTicketServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -203,7 +203,13 @@ System.out.println("success");
 	sta.setString(3, NoofPersons);
 	sta.setDouble(4, amount);
 		  sta.executeUpdate();
-		 
+		  if(result>0)
+		  {
+		   out.println("<html><body><center>");
+		   out.println("<h4>Distance"+dist+"<br>");
+		   out.println("No of Passanger: "+NoofPersons+"<br>");
+		   out.println("</center></body></html>");
+		 }
 		
 		//out.println( "Amount :"+amount+"<br>");
 			 

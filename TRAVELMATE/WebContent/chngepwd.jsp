@@ -76,7 +76,7 @@ body {
 </style>
 </head>
 <body>
-<form action="Login.jsp">
+<form action="chngpwd1" method="post">
 		<div class="container">
 			<p class="paragraph">CHANGE PASSWORD
 			<p>

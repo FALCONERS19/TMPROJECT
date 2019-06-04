@@ -121,7 +121,7 @@ h1 {
 </head>
 <body>
 
-	<!-- <a href="loginservlet">Click here</a> -->
+	
 	<div class="login-box">
 		<img class="avatar" src="Images/avatar.png">
 		<h1>Login Here</h1>

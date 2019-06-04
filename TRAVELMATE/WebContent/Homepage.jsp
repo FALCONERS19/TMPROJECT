@@ -133,7 +133,7 @@ margin-bottom: -9px;
 			<ul>
 				<li><a href="Homepage.jsp"><b>Home</b></a></li>
 				<li><a href="Abtus.jsp"><b>About Us</b></a></li>
-				<li><a href="#"><b>Services</b></a></li>
+				<li><a href="Services.jsp"><b>Services</b></a></li>
 				<li><a href="Gallery.jsp"><b>Gallery</b></a></li>
 				<li><a href="Contact Us.jsp"><b>Contact Us</b></a></li>
 
